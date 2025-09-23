@@ -485,3 +485,7 @@ select {
 
 .video-block      { display: none; }   /* all hidden by default */
 .video-block.show { display: block; }  /* the one we want */
+/* temp visibility toggles */
+.hide { display: none !important; }
+.video-block { display: none; }
+.video-block.show { display: block; }
