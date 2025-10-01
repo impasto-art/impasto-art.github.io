@@ -489,3 +489,30 @@ select {
 .hide { display: none !important; }
 .video-block { display: none; }
 .video-block.show { display: block; }
+
+/* Page width control */
+:root {
+  /* Desktop: 80% of viewport; you can tweak this */
+  --page-max: 80vw;
+}
+
+/* Constrain all main containers sitewide */
+.container,
+.container.is-max-widescreen,
+.container.is-fullhd,
+.hero .container,
+.section .container,
+footer .container {
+  max-width: var(--page-max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Optional: slightly looser on small screens */
+@media (max-width: 1024px) {
+  :root { --page-max: 92vw; }
+}
+@media (max-width: 600px) {
+  :root { --page-max: 96vw; }
+}
+
