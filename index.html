@@ -55,7 +55,7 @@
           <div class="button-container">
             <!-- Appendix (visible) -->
             <a href="media/appendix.pdf" target="_blank" class="button">
-              <i class="fa-regular fa-file-pdf"></i>&emsp14;Appendix (PDF)
+              <i class="fas fa-file-pdf" aria-hidden="true"></i>&emsp14;Appendix
             </a>
           
             <!-- keep others hidden for now -->
@@ -127,14 +127,21 @@
 
 <section class="section">
   <div class="container is-max-widescreen">
-    <div class="rows">
-      <div class="rows is-centered ">
-        <div class="row is-full-width">
-          <h2 class="title is-3">Overview of IMPASTO</h2>
-          <div class="content has-text-justified"></div>
-          <img src="media/figures/method.png" class="interpolation-image" />
-          </br></br>
-          <p class="content has-text-justified">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview of IMPASTO</h2>
+
+        <!-- Optional: a short intro line (kept centered) -->
+        <!-- <p class="subtitle">A high-level look at the system.</p> -->
+
+        <!-- Image centered; remove if you don't want it -->
+        <figure class="image has-text-centered" style="margin: 1rem auto;">
+          <img src="media/figures/method.png" alt="IMPASTO method overview" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <!-- Body text matches Abstract's width and justification -->
+        <div class="content has-text-justified">
+          <p>
             IMPASTO is a robotic oil painting system that integrates learned neural dynamics models with model-based planning algorithms to accurately replicate human artists' brushstrokes and artworks.
           </p>
         </div>
@@ -142,6 +149,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="section hide" id="comparison">
   <div class="container is-max-widescreen">
